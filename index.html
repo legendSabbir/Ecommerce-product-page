@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  
+  <!--
+    Custom Font
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!--
+    Custom Stylesheet
+  -->
+  <!--<link rel="stylesheet/less" type="text/css" href="assets/less/style.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less@latest/dist/less.min.js" async></script>-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  
+  <!--
+    Js
+  -->
+  <script src="./assets/js/script.js" defer></script>
+  
+</head>
+<body>
+  
+  
+  <!--
+    Header
+  -->
+  <header class="header">
+    <div class="container">
+      
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-toggler>
+        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+      </button>
+      
+      <a href="#" class="logo">
+        <img src="assets/images/logo.svg" width="138" height="20" alt="Logo">
+      </a>
+      
+      <nav class="navbar">
+        
+        <button class="nav-close-btn" aria-label="Open Menu" data-nav-toggler>
+          <svg width="0.875em" height="0.9375em" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="currentColor" fill-rule="evenodd"/></svg>
+        </button>
+        
+        <ul class="navbar-list">
+          
+          <li>
+            <a href="#" class="navbar-link">Collections</a>
+          </li>
+          
+          <li>
+            <a href="#" class="navbar-link">Men</a>
+          </li>
+          
+          <li>
+            <a href="#" class="navbar-link">Women</a>
+          </li>
+          
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+      
+      <div class="header-action">
+        
+        <div class="cart-container">
+          <button class="cart-btn" aria-label="Open basket">
+            <svg width="1.375em" height="1.25em" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="currentColor" fill-rule="nonzero"/></svg>
+          </button>
+          
+          <div class="basket-container empty">
+            
+            <b class="basket-header">Cart</b>
+            
+            <hr>
+            
+            <div class="empty-basket">
+              Your cart is empty
+            </div>
+            
+            <div class="basket-content">
+              
+              <figure class="product-banner">
+                <img src="assets/images/image-product-1-thumbnail.jpg" height="176" width="176" alt="Checkout Image" class="img-cover">
+              </figure>
+              
+              <div class="basket-details">
+                <span class="basket-title">Fall Limited Edition Sneakers</span>
+                
+                <div class="basket-result">
+                  $125.00 x
+                  <span class="qty" data-basket-qty>3</span>
+                  <span class="total">$375.00</span>
+                </div>
+              </div>
+              
+              <button class="clear-basket-btn" aria-label="Clear Basket">
+                <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill="currentColor" fill-rule="nonzero" xlink:href="#a"/></svg>
+              </button>
+              
+              <button class="checkout-btn" aria-label="Checkout">Checkout</button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <button class="profile-btn" aria-label="profile">
+          <img src="assets/images/image-avatar.png" height="100" width="100" alt="Profile">
+        </button>
+        
+      </div>
+      
+      <div class="navbar-overlay" data-nav-toggler></div>
+      
+    </div>
+  </header>
+  
+  
+  
+  <!--
+    Main
+  -->
+  <main>
+    <article>
+      
+      
+      <!--
+        Product
+      -->
+      <section class="product">
+        <div class="container">
+          
+          <div class="product-slides">
+            
+            <div class="wrapper">
+              
+              <div class="slider-container" data-lightbox-toggler>
+                <div class="slider">
+                  
+                  <figure class="product-banner">
+                    <img src="assets/images/image-product-1.jpg" height="1000" width="1000" alt="Product image 1" class="img-cover">
+                  </figure>
+                  
+                  <figure class="product-banner">
+                    <img src="assets/images/image-product-2.jpg" height="1000" width="1000" alt="Product image 1" class="img-cover">
+                  </figure>
+                  
+                  <figure class="product-banner">
+                    <img src="assets/images/image-product-3.jpg" height="1000" width="1000" alt="Product image 1" class="img-cover">
+                  </figure>
+                  
+                  <figure class="product-banner">
+                    <img src="assets/images/image-product-4.jpg" height="1000" width="1000" alt="Product image 1" class="img-cover">
+                  </figure>
+                  
+                </div>
+              </div>
+              
+              <button class="slide-btn prev" aria-label="Previous Image">
+                <svg width="0.75em" height="1.125em" viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="currentColor" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+              </button>
+              
+              <button class="slide-btn next" aria-label="Next Image">
+                <svg width="0.8125em" height="1.125em" viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="currentColor" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+              </button>
+              
+            </div>
+            
+            <div class="slider-thumbnails">
+              
+              <button class="product-thumbnail active" aria-label="Product image thumbnail 1" data-slider-thumbnail="0">
+                <img src="assets/images/image-product-1-thumbnail.jpg" height="176" width="176" alt="Product image thumbnail 1" class="img-cover">
+              </button>
+              
+              <button class="product-thumbnail" aria-label="Product image thumbnail 2" data-slider-thumbnail="1">
+                <img src="assets/images/image-product-2-thumbnail.jpg" height="176" width="176" alt="Product image thumbnail 2" class="img-cover">
+              </button>
+              
+              <button class="product-thumbnail" aria-label="Product image thumbnail 3" data-slider-thumbnail="2">
+                <img src="assets/images/image-product-3-thumbnail.jpg" height="176" width="176" alt="Product image thumbnail 3" class="img-cover">
+              </button>
+              
+              <button class="product-thumbnail" aria-label="Product image thumbnail 4" data-slider-thumbnail="3">
+                <img src="assets/images/image-product-4-thumbnail.jpg" height="176" width="176" alt="Product image thumbnail 4" class="img-cover">
+              </button>
+              
+            </div>
+            
+          </div>
+          
+          <div class="product-content">
+            
+            <p class="product-subtitle">Sneaker Company</p>
+            
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+            
+            <p class="product-text">
+              These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            
+            <div class="price-wrapper">
+              <span class="price">$125.00</span>
+              
+              <span class="badge">50%</span>
+              
+              <del class="del">$250.00</del>
+            </div>
+            
+            <div class="btn-group">
+              
+              <div class="counter-wrapper">
+                <button class="counter-btn minus" aria-label="Decrease quantity">
+                  <svg width="0.75em" height="0.25em" viewBox="0 0 12 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="minus"/></defs><use fill="currentColor" fill-rule="nonzero" xlink:href="#minus"/></svg>
+                </button>
+                
+                <span class="qty" data-counter-qty>0</span>
+                
+                <button class="counter-btn plus" aria-label="Increase quantity">
+                  <svg width="0.75em" height="0.75em" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="plus"/></defs><use fill="currentColor" fill-rule="nonzero" xlink:href="#plus"/></svg>
+                </button>
+              </div>
+              
+              <button class="add-to-cart-btn">
+                <svg width="1.375em" height="1.25em" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="currentColor" fill-rule="nonzero"/></svg>
+                
+                <span>Add to cart</span>
+              </button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+      
+      
+      <!--
+        Lightbox
+      -->
+      <div class="lightbox">
+        <div class="lightbox-container">
+          <button class="lightbox-close-btn" data-lightbox-toggler>
+            <svg width="0.875em" height="0.9375em" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        
+        <div class="lightbox-overlay" data-lightbox-toggler></div>
+      </div>
+      
+      
+      
+    </article>
+  </main>
+  
+  
+  
+</body>
+</html>
